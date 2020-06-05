@@ -1,17 +1,22 @@
 server:
-  port: 10010 #¿ªÆôµÄ¶Ë¿Ú
+  port: 10010
+
 spring:
   application:
-    name: gateway  #·şÎñµÄÃû³Æ
+    name: zuul-proxy
+
 eureka:
   client:
     service-url:
-      defaultZone: http://127.0.0.1:10086/eureka/ #×¢²áµ½eurekaµÄµØÖ·
-    registry-fetch-interval-seconds: 5  #eureka client¼ä¸ô5sÈ¥À­È¡·şÎñ×¢²áĞÅÏ¢
-zuul:
-  prefix: /api # Ìí¼ÓÂ·ÓÉÇ°×º
+      defaultZone: http://127.0.0.1:10086/eureka/
+    registry-fetch-interval-seconds: 5
 
-  sensitive-headers: #ºöÂÔÇëÇóÍ·ÉèÖÃÎªnull
+zuul:
+  routes: #æœåŠ¡å™¨é…ç½®è·¯ç”±
+    feign-server:
+      path: /feign/**
+  prefix: /api #add prefix for url
+  sensitive-headers:
   host:
     connect-timeout-millis: 15000
     socket-timeout-millis: 60000

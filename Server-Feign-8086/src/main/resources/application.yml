@@ -1,0 +1,12 @@
+server:
+  port: 8086
+spring:
+  application:
+    name: feign-server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka/
+    registry-fetch-interval-seconds: 5
+  instance:
+    instance-id:feign-server-8086

@@ -13,8 +13,10 @@
         <module>Spring-Eureka</module>
         <module>Spring-Zuul</module>
         <module>Common</module>
-        <module>User</module>
-        <module>Spring-Feign</module>
+        <module>Server-User-8096</module>
+        <module>Server-User-8097</module>
+        <module>Server-Feign-8086</module>
+        <module>Server-Feign-8087</module>
     </modules>
 
     <groupId>com.learn</groupId>
