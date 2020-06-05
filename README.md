@@ -46,7 +46,7 @@ API网关, 路由客户端的访问接口, 和nginx的功能类似(针对客户�
 
 ![](https://mynoteimg.oss-cn-beijing.aliyuncs.com/20200605230154.png)
 
-## 3. SpringCloud 与 SpringBoot版本对应关系
+## 4. SpringCloud 与 SpringBoot版本对应关系
 
 | Spring Cloud               | Boot Boot                                       |
 |----------------------------|-------------------------------------------------|
